@@ -12,13 +12,18 @@ function app (argv) {
             // const movie = [argv[3],argv[4]];
             // console.log (movie);
             const newMovie = new Movie(argv[3],argv[4]);
-            newMovie.add()
+            newMovie.add();
             break;
-        case "George":
-            console.log ("Hello Mr. Weasley");
+        case "addMulti":
+            const Movie1 = new Movie(argv[3],argv[4]);
+            Movie1.add();
+            const Movie2 = new Movie(argv[5],argv[6]);
+            Movie2.add();
+            const Movie3 = new Movie(argv[7],argv[8]);
+            Movie3.add();
             break;
         default:
-            console.log ("Hello Whoever you are");
+            console.log ("I do not recognise that command");
             break;
     }
 };
